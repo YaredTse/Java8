@@ -24,14 +24,19 @@ public class Lion extends Animal {
           System.out.println( s  );
 
 
-        int[] intA = { 6, 2, 8, 9, 4, 2 };
+        int[] intA = { 6, 2, 8, 9, 4, 2, 20, 45, 11 };
         Arrays.sort(intA);
 
         for( int ccc : intA )
-          System.out.print( ccc );
+          System.out.print( ccc + " ," );
 
         System.out.println(  );
-        System.out.println( Arrays.binarySearch( intA, 20) );  // =>  -7
+        System.out.println( Arrays.binarySearch( intA, 21) );  // =>   - 7
+        System.out.println( Arrays.binarySearch( intA, 3 ) );  // =>   - 2
+        System.out.println( Arrays.binarySearch( intA, 27 ) );  // =>  - 9
+        System.out.println( Arrays.binarySearch( intA, 13 ) );  // =>  - 8
+        System.out.println( Arrays.binarySearch( intA, 2 ) );  // =>     1
+        System.out.println( Arrays.binarySearch( intA, 20 ) );  // =>    8
 
     }
 }
