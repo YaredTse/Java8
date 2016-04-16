@@ -15,11 +15,22 @@ public class MethodPlayground {
         System.out.println(" THIS IS A TEST ");
     }
 
-    public static void main(String[] strings ) {
+    public final static void testC(){
+        System.out.println(" Will Not be printed ");
+        return;
+//        System.out.println(" Will Not be printed ");
+    }
 
+    public int testC(int a){
+        if( a == 4 );
+            return 1;
+    }
+
+    public static void main(String[] strings ) {
         MethodPlayground.testA();
         MethodPlayground.testB();
 
+        new MethodPlayground().testC(5);
     }
 
 }
